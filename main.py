@@ -51,7 +51,7 @@ class Minesweeper(tk.Tk):
             self.remaining_tiles -= 1
             if mines_count == 0:
                 self.expand_empty(x, y)
-            if self.remaining_tiles == WIDTH * HEIGHT - MINES:
+            if self.remaining_tiles == MINES:
                 messagebox.showinfo("Congratulations", "You have won the game!")
 
     def count_adjacent_mines(self, x, y):
